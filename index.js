@@ -8,7 +8,10 @@ const cors = require('cors')
 const path = require("path");
 
 const app = express();
-app.use(cors())
+//app.use(cors())
+app.use(cors({
+  origin: 'https://ecommerce-backend-weld-iota.vercel.app' // Allow only your frontend
+}));
 
 // Middleware
 app.use(bodyParser.json());
