@@ -10,7 +10,7 @@ const path = require("path");
 const app = express();
 //app.use(cors())
 app.use(cors({
-  origin: 'https://ecommerce-backend-weld-iota.vercel.app' // Allow only your frontend
+  origin: 'https://emcecommercesite.vercel.app' // Allow only your frontend
 }));
 
 // Middleware
