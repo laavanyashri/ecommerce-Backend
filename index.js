@@ -95,10 +95,10 @@ const ProductSchema = new mongoose.Schema({
 
 //ProductSchema.index({ "images.name": 1 });
 //products model
-const Products = mongoose.model('Products', ProductSchema)
-Products.syncIndexes() // This ensures indexes are updated
-  .then(() => console.log("Indexes synced"))
-  .catch(err => console.error("Index sync error:", err));
+// const Products = mongoose.model('Products', ProductSchema)
+// Products.syncIndexes() // This ensures indexes are updated
+//   .then(() => console.log("Indexes synced"))
+//   .catch(err => console.error("Index sync error:", err));
 
 //cart model
 
