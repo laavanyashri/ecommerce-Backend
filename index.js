@@ -8,9 +8,11 @@ const cors = require('cors')
 const path = require("path");
 
 const app = express();
+app.options('*', cors()); // Handle preflight requests
 //app.use(cors())
 app.use(cors({
-  origin: 'https://emcecommercesite.vercel.app' // Allow only your frontend
+  origin: 'https://emcecommercesite.vercel.app', // Allow only your front-end domain
+  methods: ['GET', 'POST','DELETE'],
 }));
 
 // Middleware
